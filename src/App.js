@@ -1,10 +1,13 @@
 
 import './App.css';
+import Contacts from './Components/Contacts';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Naslov</h1>
+    <div className="row">
+      <div className="col-md-8 offset-md-2">
+        <Contacts />
+      </div>
     </div>
   );
 }
