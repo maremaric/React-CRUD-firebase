@@ -48,19 +48,19 @@ const ContactForm = (props) => {
                 <input className="form-control" placeholder="Full Name" name="fullName" 
                 value={values.fullName}
                 onChange={handleInputChange}
-                />
+                required />
             </div>
             <div className="form-row">
             <div className="form-group input-group col-md-6">
                 <div className="input-group-prepend">
                     <div className="input-group-text">
-                        <i className="fas fa-mobile-alt"></i>
+                    <i className="fas fa-mobile-alt"></i>
                     </div>
                 </div>
-                <input className="form-control" placeholder="Mobile" name="mobile" 
+                <input className="form-control" placeholder="Mobile" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3,4}" type="tel" 
                 value={values.mobile}
                 onChange={handleInputChange}
-                />
+                required />
             </div>
             <div className="form-group input-group col-md-6">
                 <div className="input-group-prepend">
@@ -68,17 +68,17 @@ const ContactForm = (props) => {
                         <i className="fas fa-envelope"></i>
                     </div>
                 </div>
-                <input className="form-control" placeholder="Email" name="email" 
+                <input className="form-control" type="email" placeholder="Email" name="email" 
                 value={values.email}
                 onChange={handleInputChange}
-                />
+                required />
             </div>
             </div>
             <div className="form-group">
                 <textarea className="form-control" placeholder="Address" name="address"
                 value={values.address}
                 onChange={handleInputChange}
-                />
+                required />
             </div>
             <div className="form-group">
                 <input type="submit" value={props.currentId == '' ? "Save" : "Update"} className="btn btn-primary btn-block" />
