@@ -75,6 +75,7 @@ const Contacts = () => {
                                 <th>Full Name</th>
                                 <th>Mobile</th>
                                 <th>Email</th>
+                                <th>Adderss</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -85,6 +86,7 @@ const Contacts = () => {
                                         <td>{contactObjects[id].fullName}</td>
                                         <td>{contactObjects[id].mobile}</td>
                                         <td>{contactObjects[id].email}</td>
+                                        <td>{contactObjects[id].address}</td>
                                         <td>
                                             <a className="btn text-primary" onClick={() => {setCurrentId(id)}}>
                                                 <i className="fas fa-pencil-alt"></i>
