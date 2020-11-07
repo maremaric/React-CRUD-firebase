@@ -75,7 +75,7 @@ const Contacts = () => {
                                 <th>Full Name</th>
                                 <th>Mobile</th>
                                 <th>Email</th>
-                                <th>Adderss</th>
+                                <th>Address</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
