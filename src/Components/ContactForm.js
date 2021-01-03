@@ -57,7 +57,7 @@ const ContactForm = (props) => {
                     <i className="fas fa-mobile-alt"></i>
                     </div>
                 </div>
-                <input className="form-control" placeholder="Mobile" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3,4}" type="tel" 
+                <input id="phone" className="form-control" placeholder="Mobile" name="mobile" pattern="^\+[0-9]+$" type="tel" 
                 value={values.mobile}
                 onChange={handleInputChange}
                 required />
